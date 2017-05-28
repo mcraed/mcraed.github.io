@@ -1,0 +1,240 @@
+/* add media queries to set text width (.about-col p, .about-col ul; .reviews-row p; .services-row p, .services-row ul)for screens larger than mobile */
+
+body{
+	/* background img */
+	width: 100%;
+	background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* nav styling 	*/
+
+.navbar{
+	margin-bottom: 0;
+	background: RGBA(23, 55, 83, 1.00);
+	border: none;
+	/*border-color: #FFFFFA;*/
+}
+
+.navbar-default .navbar-brand{
+	color: #F7F7FF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-brand:hover{
+	text-decoration: none;
+	color: #F7F7FF;
+}
+
+.nav-list{
+	margin-right: 7em;
+}
+
+/* nav link styling */
+.navbar-default .navbar-nav li a{
+	color: #F7F7FF;
+}
+/* Home link bg */
+.navbar-default .navbar-nav .active a{
+	background: #F7F7FF;
+	color: #333;
+}
+
+.navbar-default .navbar-nav .active a:hover{
+	background: #F7F7FF;
+}
+
+.navbar-default .navbar-nav li a:hover{
+	background: #F7F7FF;
+}
+
+/* **** BACK TO TOP CSS (http://jsfiddle.net/gilbitron/Lt2wH/) **** */
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+#back-to-top:hover {
+  background: #e9ebec;
+}
+#back-to-top.show {
+  opacity: 1;
+}
+
+
+/* mca styling */
+.mca{
+	z-index: 1;
+}
+/* animated logo */
+
+.head-row{
+	height: 35vh;
+	background: RGBA(247, 247, 255, .6);
+	/* increase opacity to .8 on page load with js */
+	/*opacity: 0;*/
+}
+
+.anim-logo{
+	display: block;
+	width: 15em;
+	height: 10em;
+	margin: 6vh auto;
+	opacity: 1;
+	/* slides from top on page load with js */
+	position: relative;
+	top: -23em;
+}
+
+.ind-row{
+	padding-bottom: 1em;
+	margin-top: 42vh;
+	background: RGBA(45, 48, 71, .5);
+	border-top: 2px solid RGBA(45, 48, 71, .5);
+	text-align: center;
+}
+
+.ind-row img{
+	display: inline;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+/*	width: 29em;
+	height: 13em;*/
+}
+
+.home-cols{
+	height: 80vh;
+}
+
+.about-col{
+	border-right: 2px solid #F7F7FF;
+	background: #F7F7FF;
+}
+
+.about-col p, .about-col ul{
+	/*width: 52em;*/
+	margin: 1em auto;
+}
+
+.goods-col{
+	background: #006BA6;
+}
+
+.goods-col ul{
+	font-size: 1.3em;
+	margin: .3em auto;
+	border: .3em solid #F7F7FF;
+	border-radius: 2px;
+
+}
+
+.addr-2, .phone-n{
+	font-size: 1.2em;
+}
+
+.maps-shot{
+	width: 24em;
+	height: 15em;
+}
+
+.reviews-row{
+	height: 30vh;
+	background: RGBA(191, 191, 191, .6);
+}
+
+.review p{
+	width: 35vw;
+	margin: 5vh auto;
+}
+
+.rev-name{
+	text-align: right;
+	position: relative;
+	right: 5em;
+}
+
+.services-row{
+	background: RGBA(247, 247, 255, 1.00);
+	/*background: #fff;*/
+}
+
+.step-desc{
+	height: 26em;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	margin: 1.5em 0;
+	text-align: center;
+}
+
+.step-1{
+	border-left: none;
+}
+
+.step-6{
+	border-right: none;
+}
+
+.step-desc img{
+	width: 4.5em;
+	height: 4.5em;
+	display: block;
+	margin: 1em auto;
+}
+
+.step-desc h5{
+	font-weight: bold;
+	font-size: 1.15em;
+}
+
+.services-row ul{
+	-webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  column-gap: 40px;
+  -moz-column-gap: 40px;
+}
+
+.services-row p, .services-row ul{
+	width: 85em;
+	margin: 1em auto;
+}
+
+.team-row{
+	/*background: RGBA(247, 247, 255, 1.00);*/
+}
+
+.team-title{
+	background: RGBA(191, 191, 191, .6);
+}
+
+.tm-profile{
+	background: RGBA(247, 247, 255, 1.00);
+	border: 1px solid #000;
+}
+
+/* keep eye on this - is <br clear="all" /> still needed?  */
+.tm-profile img{
+	float: left;
+	margin: 2em;
+	border: 1px solid #000;
+}
+

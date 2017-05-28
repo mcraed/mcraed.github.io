@@ -1,0 +1,15 @@
+.c-lightbox{
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: RGBA(23, 55, 83, .7);
+}
+
+.c-form{
+	width: 30em;
+	height: 30em;
+	background: #fff;
+	margin: auto;
+	z-index: 1100;
+}
