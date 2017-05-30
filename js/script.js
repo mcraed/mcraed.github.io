@@ -38,13 +38,13 @@ $(document).ready(function(){
 
 
 
-    // TOP ROW ANIMATION (.top-row changed to .head-row 5/19/17 -DM)
+  // TOP ROW ANIMATION (.top-row changed to .head-row 5/19/17 -DM)
 
-    var topRow = $('#top-row');
-    var animLogo = $('.anim-logo');
-    fadeIn = function(){
-      animLogo.animate({top: 0}, 1500);
-      topRow.animate({opacity: .8}, 1800);
-    };
-    fadeIn();
+  var topRow = $('#top-row');
+  var animLogo = $('.anim-logo');
+  fadeIn = function(){
+    animLogo.animate({top: 0}, 1500);
+    topRow.animate({opacity: .8}, 1800);
+  };
+  fadeIn();
 })

@@ -3,7 +3,8 @@
 /*
 Milestone mtg notes (5/28)
 
-add bootstrap caurosel in header
+add bootstrap caurosel in header (3-4)
+add bootstrap caurosel in reviews (5)
 build contact lightbox/modal (mobile responsive)
 add google maps API to contact modal (pending google verification w/ A Ray)
 
@@ -19,10 +20,10 @@ Need to find
 body{
 
 	/* hide demo (live @ mcraed.github.io) */
-	display: none;
+	/*display: none;*/
 	
 	width: 100%;
-	/*background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;*/
+	background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -162,7 +163,6 @@ body{
 	margin: .3em auto;
 	border: .3em solid #F7F7FF;
 	border-radius: 2px;
-
 }
 
 .addr-2, .phone-n{
@@ -250,10 +250,31 @@ body{
 	border: 1px solid #000;
 }
 
-/* keep eye on this - is <br clear="all" /> still needed?  */
+/* keep eye on this - is <br clear="all" /> needed?  */
 .tm-profile img{
 	float: left;
 	margin: 2em;
 	border: 1px solid #000;
 }
 
+
+/* Contact lightbox/modal */
+#lightbox {
+  position:fixed;
+  display: none;
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:100%; 
+  background: RGBA(000, 000, 000, .6);
+}
+
+#lightbox-content{
+	width: 40em;
+	height: 22em;
+	margin: 25vh auto;
+	background: #fff;
+  box-shadow:0 0 25px #111;
+  -webkit-box-shadow:0 0 25px #111;
+  -moz-box-shadow:0 0 25px #111;
+}

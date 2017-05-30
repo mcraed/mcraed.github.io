@@ -49,9 +49,10 @@ stylesheets/lightbox.css
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
 	<!-- link stylesheets and javascripts -->
+	<script src="js/lightbox.js"></script>
+	<script src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/lightbox.css">
-	<script src="js/script.js"></script>
 </head>
 <body>
 
@@ -64,10 +65,10 @@ stylesheets/lightbox.css
 		<li id="about-link"><a href="#about">About</a></li>
 		<li id="services-link"><a href="#services">Services</a></li>
 		<li id="team-link"><a href="#team">Team</a></li>
-		<!-- <li><a href="#contact">Contact</a></li> -->
+		<li id="contact-link"><a href="#contact">Contact</a></li>
 	</ul>
 </nav>
-</div>
+
 <div class="container-fluid">
 	<div class="site-mca">
 		<div id="top-row" class="head-row row">
@@ -229,16 +230,20 @@ stylesheets/lightbox.css
 <!-- BACK TO TOP ELEMENT (http://jsfiddle.net/gilbitron/Lt2wH/) -->
 	<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
-	<!-- Contact form Lightbox / modal -->
-	<div class="c-lightbox">
-		
-		<div class="c-form">
-			<h1>Hi</h1>
-		</div>
-
-	</div>
 </div> <!-- container -->
 
+
+
+  <!-- Contact form Lightbox / modal markup  -->
+
+<div id="lightbox">
+
+	<div id="lightbox-content">
+		<h1>Contact Form</h1>
+	</div>
+</div>
+
+	
 
 </body>
 </html>
