@@ -1,9 +1,28 @@
 /* add media queries to set text width (.about-col p, .about-col ul; .reviews-row p; .services-row p, .services-row ul)for screens larger than mobile */
 
+/*
+Milestone mtg notes (5/28)
+
+add bootstrap caurosel in header
+build contact lightbox/modal (mobile responsive)
+add google maps API to contact modal (pending google verification w/ A Ray)
+
+waiting on
+	Img files (Caurosel, Team member, misc)
+	Google maps go ahead
+	1and1 (hosting) credentials 
+
+Need to find
+	Icons ('What to expect' steps)
+*/
+
 body{
-	/* background img */
+
+	/* hide demo (live @ mcraed.github.io) */
+	display: none;
+	
 	width: 100%;
-	background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;
+	/*background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;*/
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 }
