@@ -52,7 +52,7 @@ body{
 	opacity: 1;
 	/* slides from top on page load with js */
 	position: relative;
-	top: -23em;
+	/*top: -23em;*/
 }
 
 /* nav styling 	*/

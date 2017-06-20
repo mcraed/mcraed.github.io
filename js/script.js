@@ -46,5 +46,5 @@ $(document).ready(function(){
     animLogo.animate({top: 0}, 1500);
     topRow.animate({opacity: .8}, 1800);
   };
-  fadeIn();
+  // fadeIn();
 })
