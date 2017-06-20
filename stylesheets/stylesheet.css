@@ -20,12 +20,39 @@ Need to find
 body{
 
 	/* hide demo (live @ mcraed.github.io) */
-	display: none;
+	
 	
 	width: 100%;
-	/*background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;*/
+	background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.mca{
+	width: 100%;
+}
+
+.head-row{
+	width: 100vw;
+	height: 12vh;
+	margin: 0 auto;
+	background: RGBA(255, 255, 250, .8);
+}
+
+.head-row span{
+	font-family: 'Monsterrat', sans-serif;
+	font-size: 1.3em;
+}
+
+.anim-logo{
+	display: inline-block;
+	width: 6em;
+	height: 4em;
+	margin: 1.8vh 1.5em 1.8vh 4em;
+	opacity: 1;
+	/* slides from top on page load with js */
+	position: relative;
+	top: -23em;
 }
 
 /* nav styling 	*/
@@ -70,6 +97,10 @@ body{
 	background: #F7F7FF;
 }
 
+.motto{
+	display: inline-block;
+}
+
 /* **** BACK TO TOP CSS (http://jsfiddle.net/gilbitron/Lt2wH/) **** */
 
 #back-to-top {
@@ -98,50 +129,12 @@ body{
   opacity: 1;
 }
 
-
-/* mca styling */
-.mca{
-	z-index: 1;
-}
-/* animated logo */
-
-.head-row{
-	height: 35vh;
-	background: RGBA(247, 247, 255, .6);
-	/* increase opacity to .8 on page load with js */
-	/*opacity: 0;*/
-}
-
-.anim-logo{
-	display: block;
-	width: 15em;
-	height: 10em;
-	margin: 6vh auto;
-	opacity: 1;
-	/* slides from top on page load with js */
-	position: relative;
-	top: -23em;
-}
-
-.ind-row{
-	padding-bottom: 1em;
-	margin-top: 42vh;
-	background: RGBA(45, 48, 71, .5);
-	border-top: 2px solid RGBA(45, 48, 71, .5);
-	text-align: center;
-}
-
-.ind-row img{
-	display: inline;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-/*	width: 29em;
-	height: 13em;*/
+.home-row{
+	border-top: 2px solid black;
 }
 
 .home-cols{
-	height: 80vh;
+	height: 96vh;
 }
 
 .about-col{
@@ -149,20 +142,44 @@ body{
 	background: #F7F7FF;
 }
 
+.about-col h3{
+	margin-left: 8px;
+	margin-bottom: 1em;
+	font-family: 'Monsterrat', sans-serif;
+}
+
 .about-col p, .about-col ul{
-	/*width: 52em;*/
+	width: 50em;
 	margin: 1em auto;
+	font-size: 1.1em;
 }
 
 .goods-col{
-	background: #006BA6;
+	padding: 0;
+	background: RGBA(23, 55, 83, .9);	
+	color: RGBA(247, 247, 255, 1.00);
+}
+
+.goods-top{
+	margin: 0 auto;
+	background: RGBA(89, 62, 45, 1.00);
+	padding: 1em;
+}
+
+.goods-col h4{
+	margin: 0;
+	text-align: center;
 }
 
 .goods-col ul{
-	font-size: 1.3em;
-	margin: .3em auto;
-	border: .3em solid #F7F7FF;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 3vh auto;
+	height: 100%;
 	border-radius: 2px;
+	list-style: none;
+	letter-spacing: 2px;
+	text-align: center;
 }
 
 .addr-2, .phone-n{

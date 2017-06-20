@@ -1,0 +1,23 @@
+.home-carousel{
+	height: 60vh;
+}
+
+.hcar-img{
+	width: 100%;
+	height: 60vh;
+}
+
+.hcar-img1{
+	background: url('../images/firefighter.jpeg') no-repeat center;
+	background-size: cover;
+}
+
+.hcar-img2{
+	background: url('../images/ballerina.jpeg') no-repeat center;
+	background-size: cover;
+}
+
+.hcar-img3{
+	background: url('../images/flood.jpg') no-repeat center;
+	background-size: cover;
+}

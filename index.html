@@ -1,20 +1,4 @@
 
-<!-- 
-
-********* CONTACT FORM LIGHTBOX/ MODAL: ***********
-
-
-index.html:233
-stylesheets/lightbox.css
-
-
-***************************************************
-
- -->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,24 +25,29 @@ stylesheets/lightbox.css
 	<meta name="theme-color" content="#ffffff">
 	<!-- add jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- add scrollintoview.js -->
+	<!-- see scrollintoview.js -->
 	<script src="js/jquery.scrollintoview.min.js"></script>
 	<!-- add bootstrap -->
 	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<!-- add google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
-	<!-- link stylesheets and javascripts -->
+	<!-- see stylesheets and javascripts -->
 	<script src="js/lightbox.js"></script>
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/carousels.css">
 </head>
 <body>
 
+<div id="top-row" class="head-row row">
+		<img src="images/aray-logo.png" class="anim-logo" id="anim-logo">
+		<span>Serving Florida and South Georgia | 407-601-2697</span>
+	</div>	
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
 	<div class="navbar-header">
-		<a class="motto navbar-brand">A Ray Of Hope, In Your Time Of Need!</a>
+		
 	</div>
 	<ul class="nav-list nav navbar-nav navbar-right">
 		<li class="active"><a href="#">Home</a></li>
@@ -70,28 +59,42 @@ stylesheets/lightbox.css
 </nav>
 
 <div class="container-fluid">
-	<div class="site-mca">
-		<div id="top-row" class="head-row row">
-			<img src="images/aray-logo.png" class="anim-logo" id="anim-logo">
+	<div class="mca">
+		<div id="homeCarousel" class="home-carousel carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#homeCarousel" data-slide-to="1"></li>
+		    <li data-target="#homeCarousel" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+
+		      <div class="hcar-img hcar-img1 carousel-card"></div>
+		    </div>
+
+		    <div class="item">
+
+		      <div class="hcar-img hcar-img2 carousel-card"></div>
+		    </div>
+
+		    <div class="item">
+		      <!-- <img src="images/car-img3.jpg" alt="Alternative Text" class="carousel-img"> -->
+
+		      <div class="hcar-img hcar-img3 carousel-card"></div>
+		    </div>
+		  </div>
 		</div>
-		<div class="ind-row row">
-			<div class="col-md-3">
-				<img src="http://dev.dowdrick.com/araytextiles/images/slider/01.png">
-			</div>
-			<div class="col-md-6">
-				<img src="http://dev.dowdrick.com/araytextiles/images/slider/03.png">
-			</div>
-			<div class="col-md-3">
-				<img src="http://dev.dowdrick.com/araytextiles/images/slider/02.png">
-			</div>
-		</div>
+
 		<div id="about" class="home-row row">
 			<div class="about-col col-md-8 home-cols">
-				<h3>Thoughtful Title</h3>
+				<h3>A Ray Of Hope In Your Time Of Need</h3>
 				<p>A Ray Textiles was created by the sincere demand from Insurance Carriers, contractors and homeowners to have courteous, professional customer service and soft-goods cleaning at a far more reasonable price than had been previously available to consumers. Major National franchise services tend to have invoices 30-50% more than A Ray Textiles. The owners of A Ray Textiles have always believed in fair pricing for top-notch, personalized and honest service, saving the insurance carrier and homeowner thousands per claim, but with far less hassle.</p>
 				<p>A Ray Textiles operates throughout the entire state of Florida and into South Georgia. We independently own a 10,000 sqft. processing plant in Orlando, Fl and own/operate two dry cleaning locations.</p>
 				<p>Our inventory systems, process and invoices are the most transparent in the market with few, if any, confusing and profitable line items some other companies often use to inflate your bill. We are typically paid for our services through insurance companies and A Ray Textiles will NEVER hold a policy-holder's soft goods "hostage" until we are paid like most textile services continue to do. We trust both our Carrier partners and their policy holders. At A Ray we still believe a handshake and one's word still mean something.</p>
-				<p>As well, A Ray Textiles keeps our bills exceptionally low by carefully examining ALL items in an affected residence and separating the items which are:</p>
+				<p>As well, A Ray Textiles keeps our bills exceptionally low by carefully examining ALL of your items in the effected area; determining the care required based on the severity of the damage:</p>
 				<ul>
 					<li>Completely unaffected, whereas there is no need for our specialized services</li>
 					<li>Self-cleanable, whereas we will instruct as to the best method of cleaning</li>
@@ -102,24 +105,25 @@ stylesheets/lightbox.css
 
 			<div class="goods-col col-md-4 home-cols">
 
-				<!-- <p>Here is a list of soft good/textiles/garments that we can professionally clean from the likes of all odors, smoke, soot, mold, biohazardous materials and water (if items we extract cannot come 100% clean for whatever reason we will not charge for them):</p> -->
+				<div class="goods-top">
+					<h4>Removing odors, mold, biohazardous materials, water damage, and the like from your damaged possesions.</h4>
+				</div>
 				<ul>
-					<li>All clothing</li>
-					<li>Bulk Laundry</li>
+					<li>Clothing</li>
 					<li>Tapestries</li>
 					<li>Bedding</li>
 					<li>Window treatments</li>
-					<li>Linens</li>
+					<li>Bulk Laundry</li>
 					<li>Shoes</li>
 				 	<li>Leathers</li>
 					<li>Handbags/purses</li>
 					<li>Luggage</li>
 				 	<li>Belts</li>
 				 	<li>Rugs</li>
+					<li>Stuffed animals and dolls</li>
 					<li>Suedes</li>
 					<li>Hats</li>
 					<li>Draperies</li>
-					<li>Stuffed animals and dolls</li>
 					<li>Soft sofa's, chairs and furniture</li>
 				</ul>
 			</div>
@@ -225,11 +229,10 @@ stylesheets/lightbox.css
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			</div>
 		</div>
-	</div> <!-- site-mca -->
 
-<!-- BACK TO TOP ELEMENT (http://jsfiddle.net/gilbitron/Lt2wH/) -->
-	<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
-
+	<!-- BACK TO TOP ELEMENT (http://jsfiddle.net/gilbitron/Lt2wH/) -->
+		<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+	</div><!-- mca -->
 </div> <!-- container -->
 
 
