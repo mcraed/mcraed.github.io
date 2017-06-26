@@ -21,9 +21,9 @@ body{
 
 	/* hide demo (live @ mcraed.github.io) */
 	
-	display: none;
+	/*display: none;*/
 	width: 100%;
-	/*background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;*/
+	background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -36,7 +36,7 @@ body{
 	width: 100vw;
 	height: 12vh;
 	margin: 0 auto;
-	background: RGBA(255, 255, 250, .8);
+	background: RGBA(247, 247, 255, .8);
 }
 
 .head-row span{
@@ -131,10 +131,11 @@ body{
 
 .home-row{
 	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
 .home-cols{
-	height: 96vh;
+	min-height: 98vh;	
 }
 
 .about-col{
@@ -158,11 +159,14 @@ body{
 	padding: 0;
 	background: RGBA(23, 55, 83, .9);	
 	color: RGBA(247, 247, 255, 1.00);
+	border-left: 1px solid black;
 }
 
 .goods-top{
 	margin: 0 auto;
-	background: RGBA(89, 62, 45, 1.00);
+	/*background: RGBA(89, 62, 45, 1.00);*/
+	background: #EEEBD3;
+	color: #000;
 	padding: 1em;
 }
 
@@ -208,12 +212,18 @@ body{
 }
 
 .services-row{
-	background: RGBA(247, 247, 255, 1.00);
-	/*background: #fff;*/
+	background: RGBA(23, 55, 83, 1.00);
+	color: RGBA(247, 247, 255, 1.00);
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.serv-title{
+	padding-left: 1em;
 }
 
 .step-desc{
-	height: 26em;
+  height: 29em;
 	border-right: 1px solid #000;
 	border-left: 1px solid #000;
 	margin: 1.5em 0;
@@ -229,30 +239,22 @@ body{
 }
 
 .step-desc img{
-	width: 4.5em;
-	height: 4.5em;
+	width: 8em;
+	height: 8em;
 	display: block;
-	margin: 1em auto;
+	margin: 3vh auto;
+	border: 1px solid black;
+	border-radius: 50%;
 }
 
-.step-desc h5{
-	font-weight: bold;
-	font-size: 1.15em;
+.step-6 img{
+	border: none;
 }
 
-.services-row ul{
-	-webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 40px;
-  column-gap: 40px;
-  -moz-column-gap: 40px;
+.middle-steps span{
+	font-size: 1.2em;
 }
 
-.services-row p, .services-row ul{
-	width: 85em;
-	margin: 1em auto;
-}
 
 .team-row{
 	/*background: RGBA(247, 247, 255, 1.00);*/
@@ -269,8 +271,10 @@ body{
 
 /* keep eye on this - is <br clear="all" /> needed?  */
 .tm-profile img{
+	width: 8em;
+	height: 8em;
 	float: left;
-	margin: 2em;
+	margin: 2em 2em 2em 1em;
 	border: 1px solid #000;
 }
 

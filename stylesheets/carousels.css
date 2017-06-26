@@ -8,16 +8,21 @@
 }
 
 .hcar-img1{
-	background: url('../images/firefighter.jpeg') no-repeat center;
+	background: url('../images/website_pics/DSC_0779.jpg') no-repeat center;
 	background-size: cover;
 }
 
 .hcar-img2{
-	background: url('../images/ballerina.jpeg') no-repeat center;
+	background: url('../images/firefighter.jpeg') no-repeat center;
 	background-size: cover;
 }
 
 .hcar-img3{
+	background: url('../images/ballerina.jpeg') no-repeat center;
+	background-size: cover;
+}
+
+.hcar-img4{
 	background: url('../images/flood.jpg') no-repeat center;
 	background-size: cover;
 }

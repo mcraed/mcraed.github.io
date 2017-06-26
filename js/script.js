@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	console.log('working');
+	console.log('scripts working');
 
     // BACK TO TOP => (http://jsfiddle.net/gilbitron/Lt2wH/)
 	if ($('#back-to-top').length) {
@@ -35,16 +35,4 @@ $(document).ready(function(){
   $('#team-link').click(function(){
     $('#team').scrollintoview();
   });
-
-
-
-  // TOP ROW ANIMATION (.top-row changed to .head-row 5/19/17 -DM)
-
-  var topRow = $('#top-row');
-  var animLogo = $('.anim-logo');
-  fadeIn = function(){
-    animLogo.animate({top: 0}, 1500);
-    topRow.animate({opacity: .8}, 1800);
-  };
-  // fadeIn();
 })
