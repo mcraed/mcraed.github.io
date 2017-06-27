@@ -33,7 +33,7 @@ body{
 }
 
 .head-row{
-	width: 100vw;
+	/*width: 100vw;*/
 	height: 12vh;
 	margin: 0 auto;
 	background: RGBA(247, 247, 255, .8);
@@ -50,9 +50,22 @@ body{
 	height: 4em;
 	margin: 1.8vh 1.5em 1.8vh 4em;
 	opacity: 1;
-	/* slides from top on page load with js */
-	position: relative;
-	/*top: -23em;*/
+}
+
+@media screen and (max-width: 400px){
+	.head-row{
+		text-align: center;
+	}
+
+	.anim-logo{
+		width: 3em;
+		height: 3em;
+		margin-left: 0;
+	}
+
+	.head-row span{
+		font-size: .8em;
+	}
 }
 
 /* nav styling 	*/
@@ -141,6 +154,7 @@ body{
 .about-col{
 	border-right: 2px solid #F7F7FF;
 	background: #F7F7FF;
+	padding: 1em .3em;
 }
 
 .about-col h3{
@@ -150,13 +164,12 @@ body{
 }
 
 .about-col p, .about-col ul{
-	width: 50em;
+	/*width: 50em;*/
 	margin: 1em auto;
 	font-size: 1.1em;
 }
 
 .goods-col{
-	padding: 0;
 	background: RGBA(23, 55, 83, .9);	
 	color: RGBA(247, 247, 255, 1.00);
 	border-left: 1px solid black;
@@ -168,6 +181,10 @@ body{
 	background: #EEEBD3;
 	color: #000;
 	padding: 1em;
+}
+
+.goods-col{
+	padding: 0;
 }
 
 .goods-col h4{
@@ -235,7 +252,7 @@ body{
 }
 
 .team-row{
-	background: RGBA(23, 55, 83, .6);
+	background: RGBA(247, 247, 255, .2);
 }
 
 .team-title{
@@ -257,6 +274,29 @@ body{
 	border: 1px solid #000;
 }
 
+.footer{
+	width: 100vw;
+	height: 10vh;
+	margin-top: 1em;
+	background: RGBA(23, 55, 83, 1.00);
+	color: RGBA(247, 247, 255, 1.00);
+	text-align: center;
+	border-top: 1px solid #000;
+}
+
+.footer span{
+	display: inline-block;
+	margin: 3vh auto;
+	font-size: 1.2em;
+}
+#back-to-top{
+	background: RGBA(245, 245, 245, .6);
+}
+
+#back-to-top img{
+	width: 1.4em;
+	height: 1.4em;
+}
 
 /* Contact lightbox/modal */
 #lightbox {
@@ -277,4 +317,8 @@ body{
   box-shadow:0 0 25px #111;
   -webkit-box-shadow:0 0 25px #111;
   -moz-box-shadow:0 0 25px #111;
+}
+
+@media screen and (max-width: 400px){
+	.goods-list
 }

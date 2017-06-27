@@ -28,7 +28,6 @@
 }
 
 .letter-carousel{
-	/*min-height: 30vh;*/
 	background: RGBA(191, 191, 191, .6);
 }
 
@@ -41,4 +40,14 @@
 	margin: 2vh auto;
 	background: RGBA(247, 247, 255, .7);
 	padding: 2em;
+}
+
+@media screen and (max-width: 400px){
+	.letter-cont{
+		width: 70vw;
+	}
+
+	.letter-carousel-slide{
+		min-height: 45vh;
+	}
 }
