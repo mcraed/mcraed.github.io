@@ -17,6 +17,16 @@ Need to find
 	Icons ('What to expect' steps)
 */
 
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+
 body{
 
 	/* hide demo (live @ mcraed.github.io) */
@@ -317,8 +327,4 @@ body{
   box-shadow:0 0 25px #111;
   -webkit-box-shadow:0 0 25px #111;
   -moz-box-shadow:0 0 25px #111;
-}
-
-@media screen and (max-width: 400px){
-	.goods-list
 }
