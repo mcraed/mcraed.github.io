@@ -25,7 +25,7 @@ body{
 	width: 100%;
 	background: url('../images/orlova-maria-107935.jpg') no-repeat center center fixed;
 	background-size: cover;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 .mca{
@@ -190,27 +190,6 @@ body{
 	font-size: 1.2em;
 }
 
-.maps-shot{
-	width: 24em;
-	height: 15em;
-}
-
-.reviews-row{
-	height: 30vh;
-	background: RGBA(191, 191, 191, .6);
-}
-
-.review p{
-	width: 35vw;
-	margin: 5vh auto;
-}
-
-.rev-name{
-	text-align: right;
-	position: relative;
-	right: 5em;
-}
-
 .services-row{
 	background: RGBA(23, 55, 83, 1.00);
 	color: RGBA(247, 247, 255, 1.00);
@@ -252,16 +231,16 @@ body{
 }
 
 .middle-steps span{
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
-
 .team-row{
-	/*background: RGBA(247, 247, 255, 1.00);*/
+	background: RGBA(23, 55, 83, .6);
 }
 
 .team-title{
-	background: RGBA(191, 191, 191, .6);
+	background: RGBA(247, 247, 255, .8);
+	border-bottom: 2px solid #000;
 }
 
 .tm-profile{

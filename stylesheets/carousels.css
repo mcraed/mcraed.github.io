@@ -26,3 +26,19 @@
 	background: url('../images/flood.jpg') no-repeat center;
 	background-size: cover;
 }
+
+.letter-carousel{
+	/*min-height: 30vh;*/
+	background: RGBA(191, 191, 191, .6);
+}
+
+.letter-carousel-slide{
+	min-height: 26vh;
+}
+
+.letter-cont{
+	width: 40vw;
+	margin: 2vh auto;
+	background: RGBA(247, 247, 255, .7);
+	padding: 2em;
+}

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial scale=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<title>A Ray Textiles (Under Development)</title>
 	<!-- add favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon.ico/apple-icon-57x57.png">
@@ -30,14 +30,20 @@
 	<!-- add bootstrap -->
 	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-	<!-- add google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
-	<!-- see stylesheets and javascripts -->
+	<!-- add google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lato" rel="stylesheet">
+
+	<!-- reference javascripts -->
 	<script src="js/lightbox.js"></script>
 	<script src="js/script.js"></script>
+
+	<!-- reference stylesheets -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/carousels.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/masonry.css">
+
+
 </head>
 <body>
 
@@ -134,13 +140,56 @@
 
 		</div>
 		<div class="reviews-row row">
-			<div class="review col-md-6">
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p class="rev-name">- Reviewer</p>
-			</div>
-			<div class="review col-md-6">
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p class="rev-name">- Customer</p>
+
+			<div id="letterCarousel" class="letter-carousel carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active letter-carousel-slide">
+						<div class="letter-cont">
+							<p>
+								"Thank you for helping me through one of the most difficult experiences of my life. We have been well pleased with the service that you and your company provided to our family. Thank you for the time and dedication to my items, and for the multiple trips to and from Tallahassee."
+							</p>
+						</div>
+					</div>
+
+					<div class="item letter-carousel-slide">
+						<div class="letter-cont">
+							<p>
+								"I would live to particularly like to commend Brandon who had the job of bringing all my items to my home and carrying all in, hanging clothing in the closets and stacking boxes neatly. He had a tremendous job and completed it with a smile and never a complaint. Believe me, it was a tough job."
+							</p>
+						</div>
+					</div>
+					
+					<div class="item letter-carousel-slide">
+						<div class="letter-cont">
+							<p>
+								"I would highly recommend A Ray Textiles...As a physician, I have to deal with a lot of businesses; this is one business I didn't have to DEAL with and instead took care of me."
+							</p>
+							<p>- Dr. Joseph Fischetti, D.C.</p>
+						</div>
+					</div>
+					<div class="item letter-carousel-slide">
+						<div class="letter-cont">
+							<p>
+								"You all were so professional and kind during this stressful time which made everything a little easier! You managed to get everything back to us in a timely manner and it was all very organized and labeled. Can't thank you enough!"
+							</p>
+						</div>
+					</div>
+					<div class="item letter-carousel-slide">
+						<div class="letter-cont">
+							<p>
+								"After the fire they were here promptly and they were so nice. We appreciate their attitude and it created a calmer environment. Brandon has been a real pleasure to work with and the clothes look great. Thank you again!"
+							</p>
+						</div>
+					</div>
+					<!-- Left and right controls -->
+				  <a class="left carousel-control" href="#letterCarousel" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#letterCarousel" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
 			</div>
 		</div>
 
@@ -176,7 +225,28 @@
 
 		<div id="team" class="team-row row">
 			<div class="team-title col-md-12">
-				<h3>Team</h3>
+				<h3>Meet The A Ray Team</h3>
+			</div>
+			<div class="tm-masonry col-md-12">	
+				<img id="mas-1" src="images/Website_pics/IMG_2872.jpg">
+				<img id="mas-2" src="images/Website_pics/DSC_0715a.jpg">
+				<img id="mas-3" src="images/Website_pics/DSC_0728.jpg">
+				<img id="mas-9" src="images/Website_pics/DSC_0756.jpg">
+				<img id="mas-4" src="images/Website_pics/DSC_0731.jpg">
+				<img id="mas-5" src="images/Website_pics/DSC_0741.jpg">
+				<img id="mas-6" src="images/Website_pics/DSC_0742.jpg">
+				<img id="mas-7" src="images/Website_pics/DSC_0752.jpg">
+				<img id="mas-8" src="images/Website_pics/IMG_2869.jpg">
+				<img id="mas-10" src="images/Website_pics/DSC_0759.jpg">
+				<img id="mas-11" src="images/Website_pics/DSC_0800.jpg">
+				<img src="images/Website_pics/DSC_0783.jpg">
+				<img src="images/Website_pics/DSC_0786.jpg">
+			</div>
+			<div class="tm-profile col-md-6">
+				<img src="images/Website_pics/DSC_0696.jpg">
+				<h3>Kevin Oatkin</h3>
+				<h5>Title</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			</div>
 			<div class="tm-profile col-md-6">
 				<img src="images/Website_pics/DSC_0687a.jpg">
@@ -185,14 +255,8 @@
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			</div>
 			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0696.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
 				<img src="images/Website_pics/DSC_0701.jpg">
-				<h3>Team Member</h3>
+				<h3>Devin Oatkin</h3>
 				<h5>Title</h5>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			</div>
@@ -202,60 +266,9 @@
 				<h5>Title</h5>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0715a.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0728.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0731.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0741.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0742.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0752.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0756.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0759.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="tm-profile col-md-6">
-				<img src="images/Website_pics/DSC_0800.jpg">
-				<h3>Team Member</h3>
-				<h5>Title</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
+
+
+
 		</div>
 
 	<!-- BACK TO TOP ELEMENT (http://jsfiddle.net/gilbitron/Lt2wH/) -->
