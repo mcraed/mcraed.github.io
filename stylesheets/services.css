@@ -1,0 +1,43 @@
+.services-row{
+	background: RGBA(23, 55, 83, 1.00);
+	color: RGBA(247, 247, 255, 1.00);
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.serv-title{
+	padding-left: 1em;
+}
+
+.step-desc{
+  height: 29em;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	margin: 1.5em 0;
+	text-align: center;
+}
+
+.step-1{
+	border-left: none;
+}
+
+.step-6{
+	border-right: none;
+}
+
+.step-desc img{
+	width: 8em;
+	height: 8em;
+	display: block;
+	margin: 3vh auto;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+.step-6 img{
+	border: none;
+}
+
+.middle-steps span{
+	font-size: 1.1em;
+}
